@@ -5,7 +5,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class AlertGui {
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/sensor_data";
+    private static final String DB_URL = "Enter server url";
     private static final String DB_USER = "your_username";
     private static final String DB_PASS = "your_password";
     private static final float LOWER_THRESHOLD = 2.0f;
