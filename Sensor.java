@@ -48,7 +48,7 @@ public class Sensor {
     }
 
     private static void storeTemperature(Connection conn, float temperature) {
-        String sql = "INSERT INTO temperature (timestamp, temperature) VALUES (?, ?)";
+        String sql = "INSERT INTO temperature (reading_time, temperature) VALUES (?, ?)";
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setObject(1, LocalDateTime.now()); // Current timestamp
             pstmt.setFloat(2, temperature);
